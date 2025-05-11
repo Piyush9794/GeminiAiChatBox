@@ -88,3 +88,16 @@ body {
     padding: 12px;
   }
 }
+.ai-response-box {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin: 8px 10;
+  
+}
+
