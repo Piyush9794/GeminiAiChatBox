@@ -3,20 +3,14 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/GeminiAiChatBox/',
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    emptyOutDir: true,
     rollupOptions: {
       input: {
         main: './index.html'
+      },
+      output: {
+        entryFileNames: `assets/[name].js`, // Ensures .js extension
       }
-    }
-  },
-  resolve: {
-    alias: {
-      '@': '/src'
     }
   }
 })
